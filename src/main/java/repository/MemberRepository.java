@@ -1,4 +1,9 @@
 package repository;
+import entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.Optional;
 
-public class MemberRepository {
+public interface MemberRepository extends JpaRepository<Member,Long> {
+    Optional<Member> findByEmail(String email);
+    boolean existsByEmail(String email);
 }

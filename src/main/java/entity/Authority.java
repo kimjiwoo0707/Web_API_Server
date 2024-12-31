@@ -1,4 +1,6 @@
 package entity;
 
-public class Authority {
+public enum Authority {
+    ROLE_USER,
+    ROLE_ADMIN
 }
