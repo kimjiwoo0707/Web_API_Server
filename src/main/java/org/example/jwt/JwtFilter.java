@@ -1,5 +1,6 @@
-package jwt;
+package org.example.jwt;
 
+import jakarta.servlet.ServletException;
 import lombok.RequiredArgsConstructor;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.http.HttpServletRequest;

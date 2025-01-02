@@ -1,9 +1,10 @@
-package dto;
+package org.example.dto;
 
-import entity.Member;
-import entity.Member.Authority;
+import org.example.entity.Member;
+import org.example.entity.Authority;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Getter
@@ -19,5 +20,9 @@ public class MemberRequestDto {
                 .password(passwordEncoder.encode(this.password))
                 .authority(Authority.valueOf(this.authority))
                 .build();
+    }
+
+    public UsernamePasswordAuthenticationToken toAuthentication() {
+        return new UsernamePasswordAuthenticationToken(this.email, this.password);
     }
 }

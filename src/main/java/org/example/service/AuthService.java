@@ -1,18 +1,21 @@
-import dto.MemberRequestDto;
-import dto.MemberResponseDto;
-import dto.TokenRequestDto;
-import entity.Member;
-import entity.RefreshToken;
+package org.example.service;
+
+import org.example.dto.MemberRequestDto;
+import org.example.dto.MemberResponseDto;
+import org.example.dto.TokenDto;
+import org.example.dto.TokenRequestDto;
+import org.example.entity.Member;
+import org.example.entity.RefreshToken;
 import jakarta.transaction.Transactional;
-import jwt.TokenProvider;
+import org.example.jwt.TokenProvider;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import repository.MemberRepository;
-import repository.RefreshTokenRepository;
+import org.example.repository.MemberRepository;
+import org.example.repository.RefreshTokenRepository;
 
 @Service
 @RequiredArgsConstructor

@@ -1,6 +1,6 @@
-package jwt;
+package org.example.jwt;
 
-import dto.TokenDto;
+import org.example.dto.TokenDto;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;

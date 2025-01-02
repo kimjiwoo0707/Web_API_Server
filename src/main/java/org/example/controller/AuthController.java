@@ -1,15 +1,17 @@
-package controller;
+package org.example.controller;
 
 import lombok.RequiredArgsConstructor;
+import org.example.dto.TokenDto;
+import org.example.service.AuthService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 
-import dto.MemberRequestDto;
-import dto.TokenRequestDto;
-import dto.MemberResponseDto;
+import org.example.dto.MemberRequestDto;
+import org.example.dto.TokenRequestDto;
+import org.example.dto.MemberResponseDto;
 
 @RestController
 @RequestMapping("/auth")

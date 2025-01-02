@@ -1,9 +1,10 @@
-package jwt;
+package org.example.jwt;
 
+import jakarta.servlet.ServletException;
 import org.springframework.stereotype.Component;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import org.springframework.security.access.AccessDeniedHandler;
+import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.security.access.AccessDeniedException;
 import java.io.IOException;
 

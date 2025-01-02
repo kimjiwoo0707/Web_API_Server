@@ -1,4 +1,4 @@
-package jwt;
+package org.example.jwt;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

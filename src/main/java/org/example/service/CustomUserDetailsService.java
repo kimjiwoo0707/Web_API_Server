@@ -1,6 +1,6 @@
-package service;
+package org.example.service;
 
-import entity.Member;
+import org.example.entity.Member;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.GrantedAuthority;
-import repository.MemberRepository;
+import org.example.repository.MemberRepository;
 
 import java.util.Collections;
 
